@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+</script>
+</head>
+<body>
+    
+<script src="js/vendor/three.min.js"></script>    
+    
+test
+<button id="btn2">Show XXXXX</button>
+<button type="button" onclick="myFunction()">Show WebVR</button>
+<div id="myDiv">This is <span style="background-color: rgb(211, 255, 230);">a di</span>v element.</div>
+
+<script>
+    function myFunction() {
+        document.getElementById("myDiv").style.border = "thick solid #0000FF";
+        var getResult__ = navigator.getVRDevices();
+        if (navigator.getVRDevices) {
+            document.getElementById("myDiv").style.backgroundColor = "yellow";
+        }
+        document.getElementById("myDiv").style.border = "thick solid #0000FF";
+//        document.getElementById("myDiv").style.backgroundColor = "red";
+    
+    }
+</script>
+
+</body>
+</html>
